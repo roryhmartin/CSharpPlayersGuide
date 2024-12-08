@@ -1,0 +1,15 @@
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/bin/Debug/net8.0/the four sisters and the duckbear
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/bin/Debug/net8.0/the four sisters and the duckbear.deps.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/bin/Debug/net8.0/the four sisters and the duckbear.runtimeconfig.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/bin/Debug/net8.0/the four sisters and the duckbear.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/bin/Debug/net8.0/the four sisters and the duckbear.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.AssemblyInfoInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.AssemblyInfo.cs
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.csproj.CoreCompileInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.sourcelink.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/refint/the four sisters and the duckbear.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/the four sisters and the duckbear.genruntimeconfig.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/the four sisters and the duckbear/obj/Debug/net8.0/ref/the four sisters and the duckbear.dll

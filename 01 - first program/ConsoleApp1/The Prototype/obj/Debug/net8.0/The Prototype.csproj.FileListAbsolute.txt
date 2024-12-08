@@ -1,0 +1,15 @@
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/bin/Debug/net8.0/The Prototype
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/bin/Debug/net8.0/The Prototype.deps.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/bin/Debug/net8.0/The Prototype.runtimeconfig.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/bin/Debug/net8.0/The Prototype.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/bin/Debug/net8.0/The Prototype.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.AssemblyInfoInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.AssemblyInfo.cs
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.csproj.CoreCompileInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.sourcelink.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/refint/The Prototype.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/The Prototype.genruntimeconfig.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/The Prototype/obj/Debug/net8.0/ref/The Prototype.dll

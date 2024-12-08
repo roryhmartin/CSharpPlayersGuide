@@ -1,0 +1,15 @@
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.AssemblyInfoInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.AssemblyInfo.cs
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.csproj.CoreCompileInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.sourcelink.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/bin/Debug/net8.0/Tuples - Simulas Soup
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/bin/Debug/net8.0/Tuples - Simulas Soup.deps.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/bin/Debug/net8.0/Tuples - Simulas Soup.runtimeconfig.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/bin/Debug/net8.0/Tuples - Simulas Soup.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/bin/Debug/net8.0/Tuples - Simulas Soup.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/refint/Tuples - Simulas Soup.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/Tuples - Simulas Soup.genruntimeconfig.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Tuples - Simulas Soup/obj/Debug/net8.0/ref/Tuples - Simulas Soup.dll

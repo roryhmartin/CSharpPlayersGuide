@@ -1,0 +1,15 @@
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.AssemblyInfoInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.AssemblyInfo.cs
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.csproj.CoreCompileInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.sourcelink.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/bin/Debug/net8.0/Buying Inventory
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/bin/Debug/net8.0/Buying Inventory.deps.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/bin/Debug/net8.0/Buying Inventory.runtimeconfig.json
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/bin/Debug/net8.0/Buying Inventory.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/bin/Debug/net8.0/Buying Inventory.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/refint/Buying Inventory.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/Buying Inventory.genruntimeconfig.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/01 - first program/ConsoleApp1/Buying Inventory/obj/Debug/net8.0/ref/Buying Inventory.dll

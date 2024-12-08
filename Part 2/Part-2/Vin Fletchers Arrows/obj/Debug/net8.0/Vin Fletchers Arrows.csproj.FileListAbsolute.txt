@@ -1,0 +1,15 @@
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.AssemblyInfoInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.AssemblyInfo.cs
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.csproj.CoreCompileInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.sourcelink.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/bin/Debug/net8.0/Vin Fletchers Arrows
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/bin/Debug/net8.0/Vin Fletchers Arrows.deps.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/bin/Debug/net8.0/Vin Fletchers Arrows.runtimeconfig.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/bin/Debug/net8.0/Vin Fletchers Arrows.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/bin/Debug/net8.0/Vin Fletchers Arrows.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/refint/Vin Fletchers Arrows.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/Vin Fletchers Arrows.genruntimeconfig.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/Vin Fletchers Arrows/obj/Debug/net8.0/ref/Vin Fletchers Arrows.dll
