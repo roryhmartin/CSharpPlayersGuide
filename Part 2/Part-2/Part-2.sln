@@ -8,6 +8,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples - Simulas Soup", "Tu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vin Fletchers Arrows", "Vin Fletchers Arrows\Vin Fletchers Arrows.csproj", "{B7F42B75-EA97-4ABA-A98A-87C861C39EF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Properties of Arrows", "The Properties of Arrows\The Properties of Arrows.csproj", "{A0FE8BA5-3FA9-4953-BD88-BB0755700087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Point", "The Point\The Point.csproj", "{A696CD13-5531-42CF-A939-C7DC35A93965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Colour", "The Colour\The Colour.csproj", "{506C5D93-D5B0-415B-B55C-79A1C0BF78F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Card", "The Card\The Card.csproj", "{9B6D8CB1-2636-4858-A0B9-75539C8316F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Locked Door", "The Locked Door\The Locked Door.csproj", "{5E449BC3-8541-4DC9-B8D9-8E2D80748F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Password Validator", "The Password Validator\The Password Validator.csproj", "{A8368124-5623-4875-A9AC-A5322DBF6008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +42,29 @@ Global
 		{B7F42B75-EA97-4ABA-A98A-87C861C39EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7F42B75-EA97-4ABA-A98A-87C861C39EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7F42B75-EA97-4ABA-A98A-87C861C39EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FE8BA5-3FA9-4953-BD88-BB0755700087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FE8BA5-3FA9-4953-BD88-BB0755700087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FE8BA5-3FA9-4953-BD88-BB0755700087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FE8BA5-3FA9-4953-BD88-BB0755700087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A696CD13-5531-42CF-A939-C7DC35A93965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A696CD13-5531-42CF-A939-C7DC35A93965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A696CD13-5531-42CF-A939-C7DC35A93965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A696CD13-5531-42CF-A939-C7DC35A93965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506C5D93-D5B0-415B-B55C-79A1C0BF78F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506C5D93-D5B0-415B-B55C-79A1C0BF78F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506C5D93-D5B0-415B-B55C-79A1C0BF78F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506C5D93-D5B0-415B-B55C-79A1C0BF78F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B6D8CB1-2636-4858-A0B9-75539C8316F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B6D8CB1-2636-4858-A0B9-75539C8316F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B6D8CB1-2636-4858-A0B9-75539C8316F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B6D8CB1-2636-4858-A0B9-75539C8316F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E449BC3-8541-4DC9-B8D9-8E2D80748F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E449BC3-8541-4DC9-B8D9-8E2D80748F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E449BC3-8541-4DC9-B8D9-8E2D80748F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E449BC3-8541-4DC9-B8D9-8E2D80748F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8368124-5623-4875-A9AC-A5322DBF6008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8368124-5623-4875-A9AC-A5322DBF6008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8368124-5623-4875-A9AC-A5322DBF6008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8368124-5623-4875-A9AC-A5322DBF6008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

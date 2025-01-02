@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tuples - Simulas Soup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9022c25eea43fa18e98b60545d5da6ebaba53c8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6e460c388abd9b350d44a7918a4eb37e76616cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tuples - Simulas Soup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tuples - Simulas Soup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
