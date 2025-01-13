@@ -1,0 +1,15 @@
+need a player class so we can instantiate two players
+need a game class so we can instantiate a game
+game class should have a play method that takes two players and returns the winner
+need enums for the different moves
+need a way to determine the winner
+need a counter to keep track of the score for each player
+need a way to display the score
+
+
+game class - has a method that compares both players choices and returns the winner
+players choice is stored in the Player class
+when the winner is determined and the winning players score is updated
+
+the game is repeated in a loop until the user quits
+

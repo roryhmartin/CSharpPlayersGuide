@@ -11,57 +11,14 @@ public class PasswordValidator
 
     public void PasswordValidatorLoop()
     {
-        bool PasswordLengthIsLongEnough = false;
-        bool containssNumber = false;
-        bool containsUpperCase = false;
-        bool ContainsLowerCase = false;
-        bool containsSpecialCharacter = false;
-        
-        if (Password.Length < 6)
-        {
-            PasswordLengthIsLongEnough = false;
-        }
-        else
-        {
-            {
-                Console.WriteLine("Password is long enough.");
-                PasswordLengthIsLongEnough = true;
-            }
-        }
-        foreach (char letter in Password)
-        {
-            if (char.IsDigit(letter))
-            {
-                containssNumber = true;
-            }
-            else
-            {
-                containssNumber = false;
-            }
-           
+        bool PasswordIsLongEnough = PasswordLengthIsLongEnough(Password);
+        bool containsNumber = PasswordContainsNumber(Password);
+        bool containsUpperCase = PasswordContainsUpperCase(Password);
+        bool ContainsLowerCase = PasswordContainsLowerCase(Password);
+        bool containsSpecialCharacter = PasswordContainsSpecialCharacter(Password);
 
-            if (char.IsUpper(letter))
-            {
-                containsUpperCase = true;
-            }
-            else
-            {
-                containsUpperCase = false;
-            }
-            
-            
-            if (char.IsLower(letter))
-            {
-                ContainsLowerCase = true;
-            }
-            else
-            {
-                ContainsLowerCase = false;
-            }
-            
-        }
         
-        if(PasswordLengthIsLongEnough && containssNumber && containsUpperCase && ContainsLowerCase)
+        if(PasswordIsLongEnough && containsNumber && containsUpperCase && ContainsLowerCase & !containsSpecialCharacter)
         {
             Console.WriteLine("Password is valid.");
         }
@@ -70,4 +27,31 @@ public class PasswordValidator
             Console.WriteLine("Password is invalid.");
         }
     }
+    
+    private bool PasswordLengthIsLongEnough(string password)
+    {
+        return Password.Length >= 6;
+    }
+
+   private bool PasswordContainsNumber(string password)
+   {
+       return password.Any(char.IsDigit);
+   }
+
+   private bool PasswordContainsUpperCase(string password)
+   {
+       return password.Any(char.IsUpper);
+   }
+
+   private bool PasswordContainsLowerCase(string password)
+   {
+       return password.Any(char.IsLower);
+   }
+
+   private bool PasswordContainsSpecialCharacter(string password)
+   {
+       char[] specialCharacters = { 'T', '&' };
+       return password.Any(specialCharacters.Contains);
+   }
+   
 }

@@ -11,6 +11,7 @@ while (KeepRunning)
 {
     Console.WriteLine("Enter your password: ");
     string UsersPassword = Console.ReadLine();
+    if (UsersPassword == null) break;
     PasswordValidator passwordValidator = new PasswordValidator(UsersPassword);
     passwordValidator.PasswordValidatorLoop();
 }
