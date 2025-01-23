@@ -1,0 +1,7 @@
+need a player class that can be instantiated for both players
+needs a game class - checks for win, checks for draw, checks for valid move
+How to draw the board? 
+How to check for a win?
+
+wins could be in functions that check for a win in each direction(vertical, horizontal, diagonal)
+

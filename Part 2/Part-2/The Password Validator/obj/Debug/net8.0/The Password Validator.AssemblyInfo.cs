@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("The Password Validator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e86a5da00ce68e5596df968beb297c539e3537a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b207edd953622cd0d04669698a46af9891530291")]
 [assembly: System.Reflection.AssemblyProductAttribute("The Password Validator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("The Password Validator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

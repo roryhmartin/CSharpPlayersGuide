@@ -1,0 +1,15 @@
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/bin/Debug/net8.0/tictactoe
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/bin/Debug/net8.0/tictactoe.deps.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/bin/Debug/net8.0/tictactoe.runtimeconfig.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/bin/Debug/net8.0/tictactoe.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/bin/Debug/net8.0/tictactoe.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.AssemblyInfoInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.AssemblyInfo.cs
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.csproj.CoreCompileInputs.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.sourcelink.json
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/refint/tictactoe.dll
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.pdb
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/tictactoe.genruntimeconfig.cache
+/Users/rorymartin/repos/cSharpPlayersGuide/Part 2/Part-2/tictactoe/obj/Debug/net8.0/ref/tictactoe.dll
