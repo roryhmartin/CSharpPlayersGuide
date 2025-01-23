@@ -3,6 +3,13 @@ namespace tictactoe
     public class GameBoard
     {
         public string[] grid = new string[9] {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+        
+        static char[,] playfield =
+        {
+            {'1', '2', '3'},
+            {'4', '5', '6'},
+            {'7', '8', '9'},
+        };
         public void DisplayBoard()
         {
             Console.WriteLine();

@@ -1,11 +1,13 @@
+using tictactoe.Enumerations;
+
 namespace tictactoe;
 
 public class Player
 {
-    public string PlayerName { get; set; }
+    public Cell Symbol { get; }
     
-    public Player(string name)
+    public Player(Cell symbol)
     {
-        PlayerName = name;
+        Symbol = symbol;
     }
 }
