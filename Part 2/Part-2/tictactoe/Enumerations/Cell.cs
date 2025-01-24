@@ -2,5 +2,7 @@
 
 public enum Cell
 {
-    Empty, X, O
+    Empty = ' ',
+    X = 'X',
+    O = 'O'
 }
