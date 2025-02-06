@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock-Paper-Scissors", "Rock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tictactoe", "tictactoe\tictactoe.csproj", "{DE4F38B2-3140-4C4C-99E4-3FD0EA8842BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packing Inventory 01", "Packing Inventory 01\Packing Inventory 01.csproj", "{7F4143FB-D269-4D81-8CC0-392A0EC3256B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{DE4F38B2-3140-4C4C-99E4-3FD0EA8842BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE4F38B2-3140-4C4C-99E4-3FD0EA8842BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE4F38B2-3140-4C4C-99E4-3FD0EA8842BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4143FB-D269-4D81-8CC0-392A0EC3256B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4143FB-D269-4D81-8CC0-392A0EC3256B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4143FB-D269-4D81-8CC0-392A0EC3256B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4143FB-D269-4D81-8CC0-392A0EC3256B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

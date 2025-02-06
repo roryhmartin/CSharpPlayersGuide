@@ -1,0 +1,6 @@
+@Packing_Inventory_HostAddress = http://localhost:5162
+
+GET {{Packing_Inventory_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
