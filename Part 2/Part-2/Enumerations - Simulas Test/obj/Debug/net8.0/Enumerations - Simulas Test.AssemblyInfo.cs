@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Enumerations - Simulas Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0396598a86772559a770291c7b2a9e095f554073")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69563599aca403cc6da23aec8692b360508c6188")]
 [assembly: System.Reflection.AssemblyProductAttribute("Enumerations - Simulas Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Enumerations - Simulas Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

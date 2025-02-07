@@ -4,6 +4,10 @@ public class rope : InventoryItem
 {
     public rope(int weight, int volume) : base(weight, volume)
     {
-        ItemName = "rope";
+    }
+
+    public override string ToString()
+    {
+        return "50ft of Rope";
     }
 }

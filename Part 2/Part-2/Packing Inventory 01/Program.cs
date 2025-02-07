@@ -42,6 +42,7 @@ What would you like to add:
         {
             rope rope = new rope(1, 4);
             pack.Add(rope);
+            Console.WriteLine(new rope(1,4));
         }
 
         if (input == "0")

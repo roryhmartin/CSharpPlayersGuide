@@ -2,7 +2,7 @@
 
 public class InventoryItem
 {
-    public string ItemName { get; protected set; }
+    public string ItemName { get; set; }
     public int quantity { get; protected set; }
     public int Weight { get; }
     public int Volume { get; }
@@ -22,9 +22,4 @@ public class InventoryItem
     {
         return quantity;
     }
-    
-    
-    
-    
-    
 }
