@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packing Inventory 01", "Pac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Old Robot", "The Old Robot\The Old Robot.csproj", "{35270003-92B9-44DC-BC25-E6C05055F1E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Old Robot Interface", "The Old Robot Interface\The Old Robot Interface.csproj", "{5CF29C20-2888-4C37-AF69-2FB65EF77282}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,5 +92,9 @@ Global
 		{35270003-92B9-44DC-BC25-E6C05055F1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35270003-92B9-44DC-BC25-E6C05055F1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35270003-92B9-44DC-BC25-E6C05055F1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF29C20-2888-4C37-AF69-2FB65EF77282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF29C20-2888-4C37-AF69-2FB65EF77282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF29C20-2888-4C37-AF69-2FB65EF77282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF29C20-2888-4C37-AF69-2FB65EF77282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
