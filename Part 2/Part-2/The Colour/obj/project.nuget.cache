@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "u4/hxL33qPQ=",
+  "dgSpecHash": "uHEDbw8OigM=",
   "success": true,
-  "projectFilePath": "C:\\repos\\CSharpPlayersGuide\\Part 2\\Part-2\\The Colour\\The Colour.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/rorymartin/repos/CSharpPlayersGuide/Part 2/Part-2/The Colour/The Colour.csproj",
+  "expectedPackageFiles": [
+    "/Users/rorymartin/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/rorymartin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/rorymartin/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

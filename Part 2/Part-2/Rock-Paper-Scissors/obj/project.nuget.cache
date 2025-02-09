@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4aozyV6jX8w=",
+  "dgSpecHash": "UlwSkVLx5FQ=",
   "success": true,
-  "projectFilePath": "C:\\repos\\CSharpPlayersGuide\\Part 2\\Part-2\\Rock-Paper-Scissors\\Rock-Paper-Scissors.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/rorymartin/repos/CSharpPlayersGuide/Part 2/Part-2/Rock-Paper-Scissors/Rock-Paper-Scissors.csproj",
+  "expectedPackageFiles": [
+    "/Users/rorymartin/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/rorymartin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/rorymartin/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

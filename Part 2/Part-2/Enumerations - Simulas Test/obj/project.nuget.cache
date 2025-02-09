@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n39yz6hjwpI=",
+  "dgSpecHash": "Ukdh7P0RhOU=",
   "success": true,
-  "projectFilePath": "C:\\repos\\CSharpPlayersGuide\\Part 2\\Part-2\\Enumerations - Simulas Test\\Enumerations - Simulas Test.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/rorymartin/repos/CSharpPlayersGuide/Part 2/Part-2/Enumerations - Simulas Test/Enumerations - Simulas Test.csproj",
+  "expectedPackageFiles": [
+    "/Users/rorymartin/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/rorymartin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/rorymartin/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

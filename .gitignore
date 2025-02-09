@@ -1,0 +1,25 @@
+# Ignore build artifacts
+bin/
+obj/
+
+# Ignore Rider / JetBrains IDE files
+.idea/
+
+# Ignore VSCode settings (if using VSCode)
+.vscode/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.bak
+*.swp
+
+# Ignore compiled DLLs and executables
+*.dll
+*.exe
+*.pdb
+*.log
+
+# Ignore lock files
+project.lock.json
+
