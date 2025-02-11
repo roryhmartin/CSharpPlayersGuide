@@ -5,7 +5,7 @@ Robot robot = new Robot();
 for (int index = 0; index < robot.Commands.Length; index++)
 {
     string? input = Console.ReadLine();
-    RobotCommand newCommand = input switch
+    IRobotCommand newCommand = input switch
     {
         "on" => new OnCommand(),
         "off" => new OffCommand(),
