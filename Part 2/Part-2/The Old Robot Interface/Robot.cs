@@ -17,5 +17,4 @@ public class Robot
             Console.WriteLine($"[{X} {Y} {IsPowered}]");
         }
     }
-
 }
