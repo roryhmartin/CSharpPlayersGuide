@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Old Robot Interface", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room Coordinates", "Room Coordinates\Room Coordinates.csproj", "{0D7586FA-C21E-42CC-B484-0EB968C6B601}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record-War-Preperations", "Record-War-Preperations\Record-War-Preperations.csproj", "{460FDC5D-0603-446A-BBE5-1F059A50D562}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,5 +104,9 @@ Global
 		{0D7586FA-C21E-42CC-B484-0EB968C6B601}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D7586FA-C21E-42CC-B484-0EB968C6B601}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D7586FA-C21E-42CC-B484-0EB968C6B601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460FDC5D-0603-446A-BBE5-1F059A50D562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460FDC5D-0603-446A-BBE5-1F059A50D562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460FDC5D-0603-446A-BBE5-1F059A50D562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460FDC5D-0603-446A-BBE5-1F059A50D562}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
