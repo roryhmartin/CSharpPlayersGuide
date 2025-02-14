@@ -4,22 +4,42 @@ obj/
 
 # Ignore Rider / JetBrains IDE files
 .idea/
+*.iml
+*.ipr
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/modules.xml
 
-# Ignore VSCode settings (if using VSCode)
+# Ignore Visual Studio and VS Code settings
 .vscode/
-
-# Ignore user-specific files
-*.user
+.vs/
 *.suo
+*.user
 *.bak
 *.swp
+*.csproj.user
 
-# Ignore compiled DLLs and executables
+# Ignore compiled DLLs, executables, and logs
 *.dll
 *.exe
 *.pdb
 *.log
+*.cache
 
 # Ignore lock files
 project.lock.json
+*.lock
 
+# Ignore temporary files
+*.tmp
+*.ncb
+*.sdf
+*.sqlite
+*.db
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+project.assets.json
