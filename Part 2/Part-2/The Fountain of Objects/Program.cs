@@ -14,5 +14,15 @@ using The_Fountain_of_Objects;
 // }
 
 Map map = new Map();
-map.InitializeMap(5,5);
+map.InitializeMap(10,10);
+// map[1, 1] = "X";
+Console.Write("cell before = ");
+map.SetCell(1, 1, "X");
+Console.WriteLine($"cell after = {map.GetCell(1, 1)}");
+map.DisplayMap();
+
+Locations fountain = new Locations(1, 1, map);
+fountain.LocationDiscovered();
+fountain.SetLocation(3,1, "F");
+
 map.DisplayMap();

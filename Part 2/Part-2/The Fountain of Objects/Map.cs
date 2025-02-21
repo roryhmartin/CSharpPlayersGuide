@@ -27,21 +27,66 @@ public class Map
 
     public void AltGetMapSize()
     {
+        Console.WriteLine("Map Size:");
         Console.WriteLine("Rows: " + map.GetLength(0));
         Console.WriteLine("Columns: " + map.GetLength(1));
     }
 
     public void DisplayMap()
     {
-        for (int row = 0; row < map.GetLength(0); row++)
+        int rows = map.GetLength(0);
+        int columns = map.GetLength(1);
+        
+        Console.Write('+');
+        
+        for(int row = 0; row< rows; row++)
         {
-            Console.Write("-");
-            for (int column = 0; column < map.GetLength(1); column++)
+            Console.Write("---+");
+        }
+        Console.WriteLine();
+        
+        for (int row = 0; row < rows; row++)
+        {
+            Console.Write("|");
+            
+            for (int column = 0; column < columns; column++)
             {
-                Console.Write(map[row, column] + "|");
+                string cell = map[row, column] ?? " ";
+                Console.Write($" {cell} |");
             }
+
+            Console.WriteLine();
+
+            Console.Write("+");
+            for (int i = 0; i < columns; i++)
+            {
+                Console.Write("---+");
+            }
+
             Console.WriteLine();
         }
     }
+
+    public string GetCell(int row, int column)
+    {
+        return map[row, column];
+    }
+    
+    public void SetCell(int row, int column, string value)
+    {
+        map[row, column] = value;
+    }
+    
+    // public string this[int row, int column]
+    // {
+    //     get
+    //     {
+    //         return map[row, column];
+    //     }
+    //     set
+    //     {
+    //         map[row, column] = value;
+    //     }
+    // }
 
 }
