@@ -1,0 +1,7 @@
+Make a map using a grid. 
+make a player class that can move around the grid 
+make a location class that has virtual functions to place objects on the grid
+make a fountain class derived from location that can be placed inside the map by overriding the location function
+ - the location function should pick a location on the map, and place the fountain there. to begin this will be 0,1
+make an entrance class derived from location that can be placed inside the map by overriding the location function
+ - the location function should pick a location on the map, and place the entrance there. to begin this will be 0,0
