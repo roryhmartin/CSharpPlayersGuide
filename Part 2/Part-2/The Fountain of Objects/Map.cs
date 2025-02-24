@@ -20,7 +20,7 @@ public class Map
         map = newMap;
     }
     
-    public static (int rows, int columns) GetMapSize()
+    public (int rows, int columns) GetMapSize()
     {
         return (map.GetLength(0), map.GetLength(1));
     }

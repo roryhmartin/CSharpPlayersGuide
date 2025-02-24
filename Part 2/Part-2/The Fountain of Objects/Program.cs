@@ -21,8 +21,13 @@ map.SetCell(1, 1, "X");
 Console.WriteLine($"cell after = {map.GetCell(1, 1)}");
 map.DisplayMap();
 
-Locations fountain = new Locations(1, 1, map);
-fountain.LocationDiscovered();
-fountain.SetLocation(3,1, "F");
+Locations theFountainOfObjectsLocation = new Locations(1, 1, map);
+theFountainOfObjectsLocation.LocationDiscovered();
+theFountainOfObjectsLocation.SetLocation(3,1, "X");
 
+IPlayer playerOne = new Player(0, 0, map);
+playerOne.SetPlayerLocation(3, 4);
+map.DisplayMap();
+
+playerOne.Move();
 map.DisplayMap();
