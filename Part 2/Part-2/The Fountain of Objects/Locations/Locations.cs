@@ -10,10 +10,11 @@ public class Locations
     private string _locationSymbol = " ";
     private Map _map;
     
-    public Locations(int row, int column, Map map)
+    public virtual string LocationName { get; set; }
+    
+    public Locations(Map map, string name)
     {
-        _row = row;
-        _column = column;
+        LocationName = name;
         _map = map;
     }
 
