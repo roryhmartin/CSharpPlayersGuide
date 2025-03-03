@@ -4,25 +4,35 @@ namespace The_Fountain_of_Objects;
 
 public class Player : IPlayer
 {
-    private int _row;
-    private int _column;
+    private int Row { get; set; }
+    private int Column { get; set; }
     private Map _map;
     private string _playerIcon = "@";
+    private GetLocation _getLocation;
     
     
     public Player(int row, int column, Map map)
     {
-        _row = row;
-        _column = column;
+        _getLocation = new GetLocation(row, column);
         _map = map;
     }
 
     public virtual void SetPlayerLocation(int row, int column)
     {
-        _row = row;
-        _column = column;
-        _map.SetCell(_row, _column, _playerIcon);
+        Row = row;
+        Column = column;
+        _map.SetCell(Row, Column, _playerIcon);
     }
+
+    public GetLocation GetPlayerLocation()
+    {
+        return _getLocation;
+    } 
+    
+    // public (int Row, int Column) GetPlayerLocation()
+    // {
+    //     return (Row, Column);
+    // }
 
     public string GetPlayerIcon()
     {
@@ -33,7 +43,7 @@ public class Player : IPlayer
     {
         var (maxRows, maxColumns) = _map.GetMapSize();
 
-        if (_row < 0 || _row >= maxRows || _column < 0 || _column >= maxColumns)
+        if (Row < 0 || Row >= maxRows || Column < 0 || Column >= maxColumns)
         {
             return false;
         }
@@ -47,24 +57,24 @@ public class Player : IPlayer
 
         string direction = Console.ReadLine().ToLower();
 
-        int previousRows = _row;
-        int previousColumns = _column;
+        int previousRows = Row;
+        int previousColumns = Column;
         
         if (direction == "north")
         {
-            _row--;
+            Row--;
         }
         else if (direction == "east")
         {
-            _column++;
+            Column++;
         }
         else if (direction == "south")
         {
-            _row++;
+            Row++;
         }
         else if (direction == "west")
         {
-            _column--;
+            Column--;
         }
         else
         {
@@ -73,14 +83,14 @@ public class Player : IPlayer
 
         if (!IsValidMove())
         {
-            _row = previousRows;
-            _column = previousColumns;
+            Row = previousRows;
+            Column = previousColumns;
             Console.WriteLine("You cannot go that way");
         }
         else
         {
             _map.SetCell(previousRows, previousColumns, " ");
-           SetPlayerLocation(_row, _column);
+           SetPlayerLocation(Row, Column);
         }
     }
 }
