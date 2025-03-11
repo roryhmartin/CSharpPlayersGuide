@@ -50,31 +50,7 @@ public class GameLogic
             Console.WriteLine($"DEBUG: Location -> {location.LocationName} at ({location.GetLocation().Row}, {location.GetLocation().Column})");
         }
     }
-    
-    // public List<Locations> CheckPlayerLocation()
-    // {
-    //     var playerLocation = _player.GetPlayerLocation();
-    //     var discoveredLocations = new List<Locations>();
-    //
-    //     foreach (var location in _locations)
-    //     {
-    //         var locationLocation = location.GetLocation();
-    //         if (playerLocation.Row == locationLocation.Row && playerLocation.Column == locationLocation.Column)
-    //         {
-    //             discoveredLocations.Add(location);
-    //             _map.SetCell(playerLocation.Row, playerLocation.Column, _player.GetPlayerIcon());
-    //         }
-    //         else
-    //         {
-    //             _map.SetCell(locationLocation.Row, locationLocation.Column, location.GetLocationSymbol());
-    //         }
-    //     }
-    //
-    //     return discoveredLocations;
-    // }
 
-
-    // move player move logic here?
     public void MovePlayer()
     {
         MovementDirection direction = PlayerInteractions.GetPlayerDirection();
@@ -89,23 +65,19 @@ public class GameLogic
 
         if (direction == MovementDirection.NORTH)
         {
-            // _player.SetPlayerLocation(playerLocation.Row--, playerLocation.Column);
             newRow--;
         }
         else if (direction == MovementDirection.EAST)
         {
-            // _player.SetPlayerLocation(playerLocation.Row, playerLocation.Column++);
             newColumn++;
         }
         else if (direction == MovementDirection.SOUTH)
         {
-            // _player.SetPlayerLocation(playerLocation.Row++, playerLocation.Column);
             newRow++;
         }
         else if (direction == MovementDirection.WEST)
         {
             
-            // _player.SetPlayerLocation(playerLocation.Row, playerLocation.Column--);
             newColumn--;
         }
         if (direction == MovementDirection.INVALID)
@@ -121,9 +93,6 @@ public class GameLogic
         }
         else
         {
-            
-            // _map.SetCell(previousRow, previousColumn, " ");
-            
             string previousLocationSymbol = _locations
                 .FirstOrDefault( locations => locations.GetLocation().Row == previousRow && locations.GetLocation().Column == previousColumn)
                 ?.GetLocationSymbol() ?? " ";
@@ -136,7 +105,4 @@ public class GameLogic
         Console.WriteLine("DEBUG: Calling CheckPlayerLocation()");
         CheckPlayerLocation();
     }
-    
-    // logic for if fountain is discovered and moved back to entrance
-    
 }

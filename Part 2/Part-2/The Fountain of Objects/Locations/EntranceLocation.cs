@@ -8,10 +8,6 @@ public class EntranceLocation : Locations
 
     public override void LocationDiscovered()
     {
-        
-        // Console.Clear();
-        // base.Map.DisplayMap();
-        
         Console.ForegroundColor = ConsoleColor.Magenta;
         base.LocationDiscovered();
         string playerChoice;
@@ -33,6 +29,5 @@ public class EntranceLocation : Locations
             Console.WriteLine("You find yourself at the entrance to the dungeon, the way out is sealed.");
         }
         Console.ResetColor();
-
     }
 }

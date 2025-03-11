@@ -76,17 +76,4 @@ public class Map
     {
         map[row, column] = value;
     }
-    
-    // public string this[int row, int column]
-    // {
-    //     get
-    //     {
-    //         return map[row, column];
-    //     }
-    //     set
-    //     {
-    //         map[row, column] = value;
-    //     }
-    // }
-
 }
