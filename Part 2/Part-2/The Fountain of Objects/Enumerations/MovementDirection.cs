@@ -5,5 +5,6 @@ public enum MovementDirection
     NORTH,
     EAST,
     SOUTH,
-    WEST
+    WEST,
+    INVALID
 }

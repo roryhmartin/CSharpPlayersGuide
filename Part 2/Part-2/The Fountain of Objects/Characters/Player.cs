@@ -21,6 +21,7 @@ public class Player : IPlayer
     {
         Row = row;
         Column = column;
+        _getLocation = new GetLocation(row, column);
         _map.SetCell(Row, Column, _playerIcon);
     }
 
@@ -39,58 +40,15 @@ public class Player : IPlayer
         return _playerIcon;
     }
 
-    public bool IsValidMove()
+    public bool IsValidMove(int row, int column)
     {
         var (maxRows, maxColumns) = _map.GetMapSize();
 
-        if (Row < 0 || Row >= maxRows || Column < 0 || Column >= maxColumns)
+        if (row < 0 || row >= maxRows || column < 0 || column >= maxColumns)
         {
             return false;
         }
 
         return true;
-    }
-
-    public void Move()
-    {
-        Console.WriteLine("Choose a direction: North, East, South, West");
-
-        string direction = Console.ReadLine().ToLower();
-
-        int previousRows = Row;
-        int previousColumns = Column;
-        
-        if (direction == "north")
-        {
-            Row--;
-        }
-        else if (direction == "east")
-        {
-            Column++;
-        }
-        else if (direction == "south")
-        {
-            Row++;
-        }
-        else if (direction == "west")
-        {
-            Column--;
-        }
-        else
-        {
-            Console.WriteLine("Invalid direction");
-        }
-
-        if (!IsValidMove())
-        {
-            Row = previousRows;
-            Column = previousColumns;
-            Console.WriteLine("You cannot go that way");
-        }
-        else
-        {
-            _map.SetCell(previousRows, previousColumns, " ");
-           SetPlayerLocation(Row, Column);
-        }
     }
 }
