@@ -21,7 +21,8 @@ public class TheFountainOfObjectsLocation : Locations
         
         if (!GameLogic.IsFountainActivated)
         {
-            Console.WriteLine("You have discovered the Lost Fountain");
+            Console.WriteLine("You here water dripping in this room.");
+            Console.WriteLine("You have discovered the Lost Fountain.");
             Console.ResetColor();
             
             // base.Map.DisplayMap();
@@ -35,7 +36,10 @@ public class TheFountainOfObjectsLocation : Locations
                 Console.ResetColor();
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
+                Console.Clear();
+                Map.DisplayMap();
             }
+            
         }
         
     }
