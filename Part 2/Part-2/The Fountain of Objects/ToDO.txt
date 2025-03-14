@@ -1,6 +1,11 @@
 Make a map using a grid.  ✅
 make a player class that can move around the grid ✅
 make a location class that has virtual functions to place objects on the grid ✅
-logic for if player moves into cell and discovers a location - location is discovered, show player icon, colour cell?    
-move player move logic here?
-logic for if fountain is discovered and moved back to entrance
+logic for if player moves into cell and discovers a location - location is discovered, show player icon, colour cell?  ✅  
+move player move logic here?✅
+logic for if fountain is discovered and moved back to entrance ✅
+
+Add actions to locations
+
+add enemy to locations
+ - add fight mode to actions panel

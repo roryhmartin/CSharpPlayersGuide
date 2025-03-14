@@ -16,13 +16,8 @@ public class EntranceLocation : Locations
         
         if (GameLogic.IsFountainActivated)
         {
-            
+            AvailableActions.Add("Leave the Dungeon");
             Console.WriteLine("Light pours through the open doors of the Entrance to the dungeon");
-            if (PlayerInteractions.GetYesOrNoResponse("The Fountain of Objects is Active! Do you want to leave?"))
-            {
-                Console.WriteLine("You have successfully left the dungeon!");
-                Environment.Exit(0);
-            }
         }
         else
         {
@@ -30,4 +25,14 @@ public class EntranceLocation : Locations
         }
         Console.ResetColor();
     }
+
+    public override void ExecuteAction(string action)
+    {
+        if (PlayerInteractions.GetYesOrNoResponse("With the fountain active, the doors are now open! Do you want to leave?"))
+        {
+            Console.WriteLine("You have successfully left the dungeon!");
+            Environment.Exit(0);
+        }
+    }
+    
 }

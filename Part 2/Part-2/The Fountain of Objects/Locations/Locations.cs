@@ -12,6 +12,7 @@ public class Locations
     protected readonly Map Map;
     private GetLocation _getLocation;
     protected GameLogic GameLogic;
+    protected List<string> AvailableActions { get; } = new(); 
     
     public virtual string LocationName { get; set; }
     
@@ -72,8 +73,13 @@ public class Locations
     {
         return;
     }
+
+    public List<string> GetAvailableActions()
+    {
+        return AvailableActions;
+    }
     
-    public virtual void LocationAction()
+    public virtual void ExecuteAction(string action)
     {
         Console.WriteLine("No actions available at this location");
         return;

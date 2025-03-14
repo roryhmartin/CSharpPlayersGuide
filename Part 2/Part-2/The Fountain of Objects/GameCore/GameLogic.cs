@@ -9,6 +9,7 @@ public class GameLogic
     private readonly Map _map;
     private readonly List<Locations> _locations;
     public bool FountainHasBeenDiscovered { get; set; }
+    public bool InCombat { get; set; } = false;
 
     public static bool IsFountainActivated { get; set; } = false;
 
@@ -36,9 +37,9 @@ public class GameLogic
             if (playerLocation.Row == locationLocation.Row && playerLocation.Column == locationLocation.Column)
             {
                 Console.Clear();
-                _map.DisplayMap();
                 location.LocationDiscovered();
                 _map.SetCell(playerLocation.Row, playerLocation.Column, _player.GetPlayerIcon());
+                _map.DisplayMap();
                 Console.WriteLine($"You are in { location.LocationName }");
             }
             else
@@ -125,20 +126,46 @@ public class GameLogic
     
     public void GetActions()
     {
+        if (!InCombat) 
+        {
+            LocationActions();
+        }
+        
+        
+    }
+
+    private void LocationActions()
+    {
         foreach (var location in _locations)
         {
             if (location.GetLocation().Row == _player.GetPlayerLocation().Row && location.GetLocation().Column == _player.GetPlayerLocation().Column)
             {
-                location.LocationAction();
-            }
-            else
-            {
-                Console.WriteLine("Press any key to continue...");
-                Console.ReadKey();
-            }
-            
-        } 
-       
+                Console.Clear();
+                _map.DisplayMap();
+                List<string> actions = location.GetAvailableActions();
+                
+                if (actions.Count == 0)
+                {
+                    Console.WriteLine("No actions available at this location.");
+                    Console.WriteLine("Press any key to return...");
+                    Console.ReadKey();
+                    return;
+                }
 
+                Console.WriteLine("Available actions:");
+                for (int i = 0; i < actions.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {actions[i]}");
+                }
+
+                string userInput = Console.ReadLine()?.ToLower().Trim();
+
+                if (userInput != null)
+                {
+                    location.ExecuteAction(userInput);
+                }
+            }
+        } 
     }
+
 }
