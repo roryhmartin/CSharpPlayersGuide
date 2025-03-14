@@ -4,13 +4,13 @@ public class TheFountainOfObjectsLocation : Locations
 {
     // public bool IsActivated { get; set; } = false;
     
-    public TheFountainOfObjectsLocation(Map map) : base(map, "The Fountain of Objects", "F")
+    public TheFountainOfObjectsLocation(Map map, GameLogic gameLogic) : base(map, "The Fountain of Objects", "F", gameLogic)
     {
     }
 
     public override void LocationDiscovered()
     {
-        //  Console.Clear();
+        // Console.Clear();
         // Console.ResetColor();
         // base.Map.DisplayMap();
         
@@ -27,20 +27,28 @@ public class TheFountainOfObjectsLocation : Locations
             
             // base.Map.DisplayMap();
 
-            if (PlayerInteractions.GetYesOrNoResponse("Would you like to activate it?"))
-            {
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                GameLogic.IsFountainActivated = true;
-                Console.WriteLine("The rejuvenating waters of the fountain flow freely again.");
-                Console.WriteLine("Somewhere a door opens, You may now leave");
-                Console.ResetColor();
-                Console.WriteLine("Press any key to continue...");
-                Console.ReadKey();
-                Console.Clear();
-                Map.DisplayMap();
-            }
             
         }
         
+    }
+
+
+    public override void LocationAction()
+    {
+        if (PlayerInteractions.GetYesOrNoResponse("Would you like to activate it?"))
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            GameLogic.IsFountainActivated = true;
+            Console.WriteLine("The rejuvenating waters of the fountain flow freely again.");
+            Console.WriteLine("Somewhere a door opens, You may now leave");
+            Console.ResetColor();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+        else
+        {
+            Console.Clear();
+            Map.DisplayMap();
+        }
     }
 }

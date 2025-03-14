@@ -2,7 +2,7 @@ namespace The_Fountain_of_Objects;
 
 public class EntranceLocation : Locations
 {
-    public EntranceLocation(Map map) : base(map, "Entrance", "E")
+    public EntranceLocation(Map map, GameLogic gameLogic) : base(map, "Entrance", "E", gameLogic)
     {
     }
 

@@ -11,14 +11,16 @@ public class Locations
     private string _locationSymbol;
     protected readonly Map Map;
     private GetLocation _getLocation;
+    protected GameLogic GameLogic;
     
     public virtual string LocationName { get; set; }
     
-    public Locations(Map map, string name, string locationSymbol)
+    public Locations(Map map, string name, string locationSymbol, GameLogic gameLogic)
     {
         LocationName = name;
         Map = map;
         _locationSymbol = locationSymbol;
+        GameLogic = gameLogic;
     }
         
     public string GetLocationSymbol()
@@ -68,6 +70,12 @@ public class Locations
 
     public virtual void LocationDescription()
     {
+        return;
+    }
+    
+    public virtual void LocationAction()
+    {
+        Console.WriteLine("No actions available at this location");
         return;
     }
     
