@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using The_Fountain_of_Objects.Enumerations;
 
 namespace The_Fountain_of_Objects;
@@ -26,10 +27,8 @@ public class GameLogic
         _locations.Add(location);
     }
 
-    // logic for if player moves into cell and discovers a location - location is discovered, show player icon, colour cell? 
     public void CheckPlayerLocation()
     {
-        Console.WriteLine("DEBUG: CheckPlayerLocation() called");
         var playerLocation = _player.GetPlayerLocation();
         foreach (var location in _locations)
         {
@@ -46,8 +45,6 @@ public class GameLogic
             {
                 _map.SetCell(locationLocation.Row, locationLocation.Column, location.GetLocationSymbol());
             }
-    
-            Console.WriteLine($"DEBUG: Location -> {location.LocationName} at ({location.GetLocation().Row}, {location.GetLocation().Column})");
         }
     }
 
@@ -102,7 +99,46 @@ public class GameLogic
             _player.SetPlayerLocation(newRow, newColumn);
         }
         
-        Console.WriteLine("DEBUG: Calling CheckPlayerLocation()");
-        CheckPlayerLocation();
+        // CheckPlayerLocation();
+    }
+
+
+    public void GetPlayerCommand()
+    {
+         PlayerActions userInput = PlayerInteractions.GetPlayerCommandInput();
+         
+            switch (userInput)
+            {
+                case PlayerActions.MOVE:
+                    MovePlayer();
+                    break;
+                case PlayerActions.ACTIONS_PANEL:
+                    GetActions();
+                    break;
+                default:
+                    Console.WriteLine("Invalid command. Please try again.");
+                    break;
+            }
+   
+        
+    }
+    
+    public void GetActions()
+    {
+        foreach (var location in _locations)
+        {
+            if (location.GetLocation().Row == _player.GetPlayerLocation().Row && location.GetLocation().Column == _player.GetPlayerLocation().Column)
+            {
+                location.LocationAction();
+            }
+            else
+            {
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
+            }
+            
+        } 
+       
+
     }
 }

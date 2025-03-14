@@ -4,6 +4,14 @@ namespace The_Fountain_of_Objects;
 
 public class PlayerInteractions
 {
+
+    private GameLogic _gameLogic;
+    private Map _map;
+    public PlayerInteractions(GameLogic gameLogic, Map map)
+    {
+        _gameLogic = gameLogic;
+        _map = map;
+    }
     public static bool GetYesOrNoResponse(string question)
     {
         while (true)
@@ -23,7 +31,7 @@ public class PlayerInteractions
 
                 return true;
             }
-            else if (input == "no" || input == "2" || input == "n")
+            if (input == "no" || input == "2" || input == "n")
             {
                 return false;
             }
@@ -54,8 +62,30 @@ public class PlayerInteractions
         if (input == "2" || input == "east" || input == "e") return MovementDirection.EAST;
         if (input == "3" || input == "south" || input == "s") return MovementDirection.SOUTH;
         if (input == "4" || input == "west" || input == "w") return MovementDirection.WEST;
-
+        
         return MovementDirection.INVALID;
 
+    }
+
+    public static PlayerActions GetPlayerCommandInput()
+    {
+        Console.WriteLine("Enter a command: (M: Move, A: Actions, etc.): ");
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("M: Move");
+        Console.WriteLine("A: Actions Panel");
+        Console.ResetColor();
+        string command = Console.ReadLine().ToLower().Trim();
+
+        if (command == "move" || command == "m")
+        {
+            return PlayerActions.MOVE;
+        }
+        
+        if (command == "actions" || command == "a")
+        {
+            return PlayerActions.ACTIONS_PANEL;
+        }
+
+        return PlayerActions.DEFAULT;
     }
 }
