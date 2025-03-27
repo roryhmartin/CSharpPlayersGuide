@@ -7,6 +7,11 @@ public class TheFountainOfObjectsLocation : Locations
     public TheFountainOfObjectsLocation(Map map, GameLogic gameLogic) : base(map, "The Fountain of Objects", "F", gameLogic)
     {
     }
+    
+    public override void AddLocationActions()
+    {
+        LocationDictionary.Add(1, (ActivateTheFountain, "Activate the Fountain"));
+    }
 
     public override void LocationDiscovered()
     {
@@ -21,7 +26,7 @@ public class TheFountainOfObjectsLocation : Locations
         
         if (!GameLogic.IsFountainActivated)
         {
-            Console.WriteLine("You here water dripping in this room.");
+            Console.WriteLine("You hear water dripping in this room.");
             Console.WriteLine("You have discovered the Lost Fountain.");
             Console.ResetColor();
             
@@ -33,7 +38,7 @@ public class TheFountainOfObjectsLocation : Locations
     }
 
 
-    public override void LocationAction()
+    public void ActivateTheFountain()
     {
         if (PlayerInteractions.GetYesOrNoResponse("Would you like to activate it?"))
         {

@@ -2,32 +2,22 @@ using The_Fountain_of_Objects.Enumerations;
 
 namespace The_Fountain_of_Objects;
 
-public class Player : IPlayer
+public class Player : Character, IPlayer
 {
-    private int Row { get; set; }
-    private int Column { get; set; }
-    private Map _map;
-    private string _playerIcon = "@";
-    private GetLocation _getLocation;
-    
-    
+    private static string _icon = "@";
     public Player(int row, int column, Map map)
+        : base(row, column, map, _icon)
     {
-        _getLocation = new GetLocation(row, column);
-        _map = map;
     }
 
-    public virtual void SetPlayerLocation(int row, int column)
+    public void SetPlayerLocation(int row, int column)
     {
-        Row = row;
-        Column = column;
-        _getLocation = new GetLocation(row, column);
-        _map.SetCell(Row, Column, _playerIcon);
+        SetLocation(row, column);
     }
 
     public GetLocation GetPlayerLocation()
     {
-        return _getLocation;
+        return GetLocation();
     } 
     
     // public (int Row, int Column) GetPlayerLocation()
@@ -37,12 +27,12 @@ public class Player : IPlayer
 
     public string GetPlayerIcon()
     {
-        return _playerIcon;
+        return GetIcon();
     }
 
     public bool IsValidMove(int row, int column)
     {
-        var (maxRows, maxColumns) = _map.GetMapSize();
+        var (maxRows, maxColumns) = Map.GetMapSize();
 
         if (row < 0 || row >= maxRows || column < 0 || column >= maxColumns)
         {

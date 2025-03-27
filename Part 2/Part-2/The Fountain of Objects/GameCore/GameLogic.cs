@@ -125,14 +125,29 @@ public class GameLogic
     
     public void GetActions()
     {
-        foreach (var location in _locations)
+        foreach (Locations location in _locations)
         {
             if (location.GetLocation().Row == _player.GetPlayerLocation().Row && location.GetLocation().Column == _player.GetPlayerLocation().Column)
             {
-                location.LocationAction();
+                Console.WriteLine("Available actions: ");
+                int actionIndex = 1;
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                foreach (var kvp in location.LocationDictionary)
+                {
+                    Console.WriteLine($"{actionIndex}: {kvp.Value.description}");
+                    actionIndex++;
+                }
+                Console.ResetColor();
+                
+                Console.Write("Enter the number of the action you would like to take: ");
+                int input = Convert.ToInt32(Console.ReadLine());
+                location.LocationDictionary[input].action();
+                
             }
-            else
+
+            if(location.GetLocation().Row != _player.GetPlayerLocation().Row && location.GetLocation().Column != _player.GetPlayerLocation().Column)
             {
+                Console.WriteLine("No actions available at this location.");
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
             }

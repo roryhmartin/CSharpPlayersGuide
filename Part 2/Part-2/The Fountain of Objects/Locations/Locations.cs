@@ -12,8 +12,9 @@ public class Locations
     protected readonly Map Map;
     private GetLocation _getLocation;
     protected GameLogic GameLogic;
-    
     public virtual string LocationName { get; set; }
+
+    public Dictionary<int, (Action action, string description)> LocationDictionary = new Dictionary<int, (Action action, string description)>();
     
     public Locations(Map map, string name, string locationSymbol, GameLogic gameLogic)
     {
@@ -21,8 +22,14 @@ public class Locations
         Map = map;
         _locationSymbol = locationSymbol;
         GameLogic = gameLogic;
+        AddLocationActions();
     }
-        
+
+    public virtual void AddLocationActions()
+    {
+        LocationDictionary.Add(1, (LocationAction, "Location Description"));
+    }
+    
     public string GetLocationSymbol()
     {
         if (!IsLocationDiscovered)
