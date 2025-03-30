@@ -4,3 +4,10 @@ make a location class that has virtual functions to place objects on the grid âœ
 logic for if player moves into cell and discovers a location - location is discovered, show player icon, colour cell?    
 move player move logic here?
 logic for if fountain is discovered and moved back to entrance
+
+sense enemy function for adjacent tiles
+call function in check player location 
+
+create attack function that takes a direction
+if direction is in the direction of an enemy adjacent,
+enemy takes damage 

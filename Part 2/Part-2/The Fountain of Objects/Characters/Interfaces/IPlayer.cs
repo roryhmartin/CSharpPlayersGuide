@@ -8,5 +8,13 @@ public interface IPlayer
     string GetPlayerIcon();
     GetLocation GetPlayerLocation();
     bool IsValidMove(int row, int column);
+
+    string GetName();
+
+    int GetHealth();
+
+    void AddHealth(int amount);
+
+    int ReduceHealth(int amount);
     // void Move();
 }

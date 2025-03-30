@@ -7,6 +7,9 @@ map.InitializeMap(4,4);
 IPlayer playerOne = new Player(0, 0, map);
 playerOne.SetPlayerLocation(0, 0);
 
+Goblin goblin = new Goblin(1, 0, map, 1, 100, 10);
+goblin.SetLocation(1, 0);
+
 GameLogic gameLogic = new GameLogic(playerOne, map);
 
 
@@ -15,13 +18,14 @@ entranceLocation.SetLocation(0, 0);
 entranceLocation.LocationDiscovered();
 
 TheFountainOfObjectsLocation theFountainOfObjectsLocation = new TheFountainOfObjectsLocation(map, gameLogic);
-theFountainOfObjectsLocation.SetLocation(0, 1);
+theFountainOfObjectsLocation.SetLocation(1, 2);
 
 
 
 
 PlayerInteractions playerInteractions = new PlayerInteractions(gameLogic, map);
 
+gameLogic.AddEnemyToGameLogic(goblin);
 gameLogic.AddLocationToGameLogic(theFountainOfObjectsLocation);
 gameLogic.AddLocationToGameLogic(entranceLocation);
 

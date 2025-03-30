@@ -4,5 +4,6 @@ public enum PlayerActions
 {
     DEFAULT,
     MOVE,
-    ACTIONS_PANEL
+    ACTIONS_PANEL,
+    ATTACK
 }

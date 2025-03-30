@@ -72,7 +72,8 @@ public class PlayerInteractions
         Console.WriteLine("Enter a command: (M: Move, A: Actions, etc.): ");
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("M: Move");
-        Console.WriteLine("A: Actions Panel");
+        Console.WriteLine("A: Attack");
+        Console.WriteLine("E: Environments Panel");
         Console.ResetColor();
         string command = Console.ReadLine().ToLower().Trim();
 
@@ -81,9 +82,14 @@ public class PlayerInteractions
             return PlayerActions.MOVE;
         }
         
-        if (command == "actions" || command == "a")
+        if (command == "environments" || command == "e")
         {
             return PlayerActions.ACTIONS_PANEL;
+        }
+
+        if (command == "attack" || command == "a")
+        {
+            return PlayerActions.ATTACK;
         }
 
         return PlayerActions.DEFAULT;

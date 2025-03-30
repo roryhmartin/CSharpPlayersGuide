@@ -8,6 +8,7 @@ public class GameLogic
     private readonly IPlayer _player;
     private readonly Map _map;
     private readonly List<Locations> _locations;
+    private readonly List<Enemy> _enemies;
     public bool FountainHasBeenDiscovered { get; set; }
 
     public static bool IsFountainActivated { get; set; } = false;
@@ -17,6 +18,7 @@ public class GameLogic
         _player = player;
         _map = map;
         _locations = new List<Locations>();
+        _enemies = new List<Enemy>();
         Console.ResetColor();
     }
     
@@ -27,9 +29,16 @@ public class GameLogic
         _locations.Add(location);
     }
 
+    public void AddEnemyToGameLogic(Enemy enemy)
+    {
+        _enemies.Add(enemy);
+    }
+
     public void CheckPlayerLocation()
     {
         var playerLocation = _player.GetPlayerLocation();
+        CheckForEnemies(playerLocation);
+        SenseEnemy(playerLocation);
         foreach (var location in _locations)
         {
             var locationLocation = location.GetLocation();
@@ -44,6 +53,30 @@ public class GameLogic
             else
             {
                 _map.SetCell(locationLocation.Row, locationLocation.Column, location.GetLocationSymbol());
+            }
+        }
+    }
+
+    public void CheckForEnemies(GetLocation playerLocation)
+    {
+        foreach (var enemy in _enemies)
+        {
+            var enemyLocation = enemy.GetLocation();
+            if (playerLocation.Row == enemy.GetLocation().Row && playerLocation.Column == enemy.GetLocation().Column)
+            {
+                enemy.EnemyIsDiscovered();
+                Console.WriteLine($"You have encountered {enemy.Name}");
+                enemy.AttackPlayer(_player);
+                CheckGameOver();
+            }
+            
+            if (enemy._isEnemyDiscovered) 
+            {
+                _map.SetCell(enemyLocation.Row, enemyLocation.Column, enemy.GetIcon());
+            }
+            else
+            {
+                _map.SetCell(enemyLocation.Row, enemyLocation.Column, enemy.enemyNotDiscoveredSymbol);
             }
         }
     }
@@ -115,6 +148,9 @@ public class GameLogic
                 case PlayerActions.ACTIONS_PANEL:
                     GetActions();
                     break;
+                case PlayerActions.ATTACK:
+                    AttackAction();
+                    break;
                 default:
                     Console.WriteLine("Invalid command. Please try again.");
                     break;
@@ -153,7 +189,52 @@ public class GameLogic
             }
             
         } 
-       
-
     }
+
+    private void AttackAction()
+    {
+        Console.WriteLine("ATTACK!");
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+    }
+
+    private void CheckGameOver()
+    {
+        if (_player.GetHealth() == 0)
+        {
+            Console.WriteLine("Game Over");
+            Environment.Exit(0);
+        }
+    }
+
+    private void SenseEnemy(GetLocation playerlocation)
+    {
+        // bool enemyNearby = false;
+        foreach (var enemy in _enemies)
+        {
+            var enemyLocation = enemy.GetLocation();
+
+            int rowDiff = playerlocation.Row - enemyLocation.Row;
+            int colDiff = playerlocation.Column - enemyLocation.Column;
+
+            string direction = "";
+
+            if (rowDiff <= 1 && colDiff <= 1)
+            {
+                if (rowDiff == -1 && colDiff == 0) direction = "north";
+                else if (rowDiff == 1 && colDiff == 0) direction = "south";
+                else if (rowDiff == 0 && colDiff == -1) direction = "west";
+                else if (rowDiff == 0 && colDiff == 1) direction = "east";
+                else if (rowDiff == -1 && colDiff == -1) direction = "northwest";
+                else if (rowDiff == -1 && colDiff == 1) direction = "northeast";
+                else if (rowDiff == 1 && colDiff == -1) direction = "southwest";
+                else if (rowDiff == 1 && colDiff == 1) direction = "southeast";
+
+                Console.WriteLine($"You sense an enemy nearby to the { direction }");
+                // enemyNearby = true;
+            }
+
+        }
+    }
+    
 }

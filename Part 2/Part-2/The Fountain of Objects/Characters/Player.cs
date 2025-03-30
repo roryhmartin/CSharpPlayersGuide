@@ -5,9 +5,12 @@ namespace The_Fountain_of_Objects;
 public class Player : Character, IPlayer
 {
     private static string _icon = "@";
+    protected override int Health { get; set; } = 100;
+
     public Player(int row, int column, Map map)
         : base(row, column, map, _icon)
     {
+        Name = "Player 1";
     }
 
     public void SetPlayerLocation(int row, int column)
