@@ -52,10 +52,7 @@ public abstract class Enemy : Character
         }
     }
     
-    public bool IsDead()
-    {
-        return Health <= 0;
-    }
+
 
     
 }

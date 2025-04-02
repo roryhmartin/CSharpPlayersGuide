@@ -11,6 +11,8 @@ public abstract class Character
     protected virtual string Name { get; set; } = "default character name";
 
     protected virtual int AttackPower { get; set; } = 100;
+
+    public bool IsDead = false;
     
     public Character(int row, int column, Map map, string icon)
     {
@@ -46,7 +48,7 @@ public abstract class Character
     
     public int GetHealth()
     {
-        return Health;
+      return Health;
     }
 
     public void AddHealth(int amount)
@@ -64,6 +66,7 @@ public abstract class Character
         if (Health <= 0)
         {
             Health = 0;
+            IsDead = true;
         }
         else
         {

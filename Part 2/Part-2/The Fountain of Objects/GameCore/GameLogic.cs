@@ -179,8 +179,18 @@ public class GameLogic
                 Console.ResetColor();
 
                 Console.Write("Enter the number of the action you would like to take: ");
-                int input = Convert.ToInt32(Console.ReadLine());
-                location.LocationDictionary[input].action();
+                string input = Console.ReadLine();
+                if(int.TryParse(input, out int actionNumber) && location.LocationDictionary.ContainsKey(actionNumber))
+                {
+                    location.LocationDictionary[actionNumber].action();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid input. Please enter a valid number from the list.");
+                    Console.ReadKey();
+                    Console.ResetColor();
+                }
 
                 actionsAvailable = true;
                 break; 
@@ -211,9 +221,11 @@ public class GameLogic
         Console.WriteLine("8. North West");
         Console.Write("Input: ");
 
-        string input = Console.ReadLine()?.Trim().ToLower();
+        string? input = Console.ReadLine()?.Trim().ToLower();
         Console.WriteLine($"Your input: { input }");
         bool hit = false;
+
+        List<Enemy> deadEnemies = new List<Enemy>();
 
         foreach (Enemy enemy in _enemies)
         {
@@ -226,68 +238,79 @@ public class GameLogic
                 if (input == "1" && rowDiff == 1 && colDiff == 0)
                 {
                   Console.WriteLine("You hit an enemy to the north!");
-                hit = true;
-                break;
-            }
-            else if (input == "2" && rowDiff == 0 && colDiff == -1) // East
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the east!");
-                hit = true;
-                break;
-            }
-            else if (input == "3" && rowDiff == -1 && colDiff == 0) // South
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the south!");
-                hit = true;
-                break;
-            }
-            else if (input == "4" && rowDiff == 0 && colDiff == 1) // West
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the west!");
-                hit = true;
-                break;
-            }
-            else if (input == "5" && rowDiff == 1 && colDiff == -1) // North East
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the northeast!");
-                hit = true;
-                break;
-            }
-            else if (input == "6" && rowDiff == -1 && colDiff == -1) // South East
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the southeast!");
-                hit = true;
-                break;
-            }
-            else if (input == "7" && rowDiff == -1 && colDiff == 1) // South West
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the southwest!");
-                hit = true;
-                break;
-            }
-            else if (input == "8" && rowDiff == 1 && colDiff == 1) // North West
-            {
-                enemy.ReduceHealth(100);
-                Console.WriteLine("You hit an enemy to the northwest!");
-                hit = true;
-                break;
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "2" && rowDiff == 0 && colDiff == -1) 
+                {
+                    enemy.ReduceHealth(100);
+                    Console.WriteLine("You hit an enemy to the east!");
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "3" && rowDiff == -1 && colDiff == 0) 
+                {
+                    enemy.ReduceHealth(100);
+                    Console.WriteLine("You hit an enemy to the south!");
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "4" && rowDiff == 0 && colDiff == 1)
+                {
+                    enemy.ReduceHealth(100);
+                    Console.WriteLine("You hit an enemy to the west!");
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "5" && rowDiff == 1 && colDiff == -1) 
+                {
+                    enemy.ReduceHealth(100);
+                    Console.WriteLine("You hit an enemy to the northeast!");
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "6" && rowDiff == -1 && colDiff == -1) 
+                {
+                    enemy.ReduceHealth(200);
+                    Console.WriteLine("You hit an enemy to the southeast!");
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "7" && rowDiff == -1 && colDiff == 1) 
+                {
+                    enemy.ReduceHealth(100);
+                    Console.WriteLine("You hit an enemy to the southwest!");
+                    hit = true;
+                    Console.ReadKey();
+                }
+                if (input == "8" && rowDiff == 1 && colDiff == 1)
+                {
+                    enemy.ReduceHealth(100);
+                    Console.WriteLine("You hit an enemy to the northwest!");
+                    hit = true;
+                    Console.ReadKey();
+                }
             }
 
-                Console.WriteLine("You hit an enemy!");
-                Console.ReadKey();
+            if (enemy.IsDead)
+            {
+                deadEnemies.Add(enemy);
             }
-    }
 
-    if (!hit)
-    {
-        Console.WriteLine("You missed! No enemies in that direction.");
-    }
+        }
+
+        foreach (var enemy in deadEnemies)
+        {
+            _enemies.Remove(enemy);
+            Console.WriteLine($"You slayed {enemy.Name}");
+            Console.ReadKey();
+        }
+
+        if (!hit)
+        {
+            Console.WriteLine("You missed! No enemies in that direction.");
+            Console.ReadKey();
+        }
     
 }
 
@@ -325,7 +348,9 @@ public class GameLogic
                 else if (rowDiff == -1 && colDiff == 1) direction = "southwest";  
                 else if (rowDiff == -1 && colDiff == -1) direction = "southeast";
 
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine($"You sense an enemy nearby to the { direction }");
+                Console.ResetColor();
                 // enemyNearby = true;
             }
 
