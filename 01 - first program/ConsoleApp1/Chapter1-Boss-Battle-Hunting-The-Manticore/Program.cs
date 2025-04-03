@@ -8,10 +8,16 @@ int canonDamage;
 string directHit = "That round was a direct hit!";
 string overshot = "That round OVERSHOT the target";
 string undershot = "That round UNDERSHOT the target";
+bool IsSinglePlayer = false;
 
 //Game starts here
-GetManticoreRange();
-Console.WriteLine("Player 2, it is your turn.");
+// GetManticoreRange();
+chooseGameType();
+if (!IsSinglePlayer)
+{
+    Console.WriteLine("Player 2, it is your turn.");
+}
+
 
 while (cityHealth > 0 && manticoreHealth > 0)
 {
@@ -81,6 +87,39 @@ void CanonDamageCalculator(int gameRound)
     Console.WriteLine($"The canon is expected to deal {canonDamage} damage this round");
 }
 
+void chooseGameType()
+{
+    Console.WriteLine("Choose game type: ");
+    Console.WriteLine("1. Singleplayer");
+    Console.WriteLine("2. Multiplayer");
+    string input = Console.ReadLine().Trim().ToLower();
+
+    if (input == "1" || input == "singleplayer")
+    {
+        IsSinglePlayer = true;
+        singlePlayerGame();
+    }
+    else
+    {
+        IsSinglePlayer = false;
+        multiplayerGame();
+    }
+}
+
+int singlePlayerGame()
+{
+    Random random = new Random();
+    int range = random.Next(0, 101);
+    manticoreDistance = range;
+    Console.WriteLine(range);
+    return manticoreDistance;
+}
+
+void multiplayerGame()
+{
+    GetManticoreRange();
+}
+
 int GetManticoreRange()
 {
     bool isValidInput = false;
@@ -132,7 +171,7 @@ void StatusMessage()
 void DirectHitEvent()
 {
 
-    if (manticoreHealth > 0)
+    if (manticoreHealth > 0 && IsSinglePlayer == false)
     {
         manticoreHealth -= canonDamage;
         Console.ForegroundColor =  ConsoleColor.Green;
@@ -140,6 +179,15 @@ void DirectHitEvent()
         Console.ForegroundColor =  ConsoleColor.White;
         Console.WriteLine("Player 2 Look away! Player 1 is entering the manticore's distance.");
         GetManticoreRange();
+        Console.WriteLine("The Manticore has moved!");
+    }
+    else if (manticoreHealth > 0 && IsSinglePlayer == true)
+    {
+        manticoreHealth -= canonDamage;
+        Console.ForegroundColor =  ConsoleColor.Green;
+        Console.WriteLine(directHit);
+        Console.ForegroundColor =  ConsoleColor.White;
+        singlePlayerGame();
         Console.WriteLine("The Manticore has moved!");
     }
     else
