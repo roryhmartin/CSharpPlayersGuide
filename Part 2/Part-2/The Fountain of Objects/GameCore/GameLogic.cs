@@ -5,24 +5,43 @@ namespace The_Fountain_of_Objects;
 
 public class GameLogic
 {
+    private static GameLogic? _instance;
     private readonly IPlayer _player;
     private readonly Map _map;
     private readonly List<Locations> _locations;
     private readonly List<Enemy> _enemies;
     public bool FountainHasBeenDiscovered { get; set; }
+    private DateTime startingTime; 
+    private DateTime endTime; 
 
     public static bool IsFountainActivated { get; set; } = false;
 
-    public GameLogic(IPlayer player, Map map)
+    private GameLogic(IPlayer player, Map map)
     {
         _player = player;
         _map = map;
         _locations = new List<Locations>();
         _enemies = new List<Enemy>();
+        startingTime = DateTime.Now;
+        getTime();
         Console.ResetColor();
     }
-    
-    
+
+    public static GameLogic GetInstance(IPlayer player, Map map)
+    {
+        if (_instance == null)
+        {
+            _instance = new GameLogic(player, map);
+        }
+
+        return _instance;
+    }
+
+    void getTime()
+    {
+        TimeSpan timeSpent = endTime - startingTime;
+        Console.WriteLine($"Time in Dungeon: {timeSpent.Days} days, {timeSpent.Hours} hours, {timeSpent.Minutes} minutes, {timeSpent.Seconds} seconds");
+    }
 
     public void AddLocationToGameLogic(Locations location)
     {
@@ -319,7 +338,7 @@ public class GameLogic
         if (_player.GetHealth() == 0)
         {
             Console.WriteLine("Game Over");
-            Environment.Exit(0);
+            EndGame();
         }
     }
 
@@ -355,6 +374,13 @@ public class GameLogic
             }
 
         }
+    }
+
+    public void EndGame()
+    {
+        endTime = DateTime.Now;
+        getTime();
+        Environment.Exit(0);
     }
     
 }

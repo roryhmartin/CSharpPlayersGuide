@@ -30,7 +30,7 @@ public class EntranceLocation : Locations
             if (PlayerInteractions.GetYesOrNoResponse("The Fountain of Objects is Active! Do you want to leave?"))
             {
                 Console.WriteLine("You have successfully left the dungeon!");
-                Environment.Exit(0);
+                GameLogic.EndGame();
             }
         }
         else
