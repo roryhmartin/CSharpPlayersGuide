@@ -78,6 +78,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads", "Threads\Threads.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads - The Repeating system", "Threads - The Repeating system\Threads - The Repeating system.csproj", "{D2AFE3CF-971B-4658-BBDC-0BBCE29558A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async Random Words", "Async Random Words\Async Random Words.csproj", "{B5642BC2-A867-498E-95DA-2B31AFB04EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -240,5 +242,9 @@ Global
 		{D2AFE3CF-971B-4658-BBDC-0BBCE29558A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2AFE3CF-971B-4658-BBDC-0BBCE29558A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2AFE3CF-971B-4658-BBDC-0BBCE29558A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5642BC2-A867-498E-95DA-2B31AFB04EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5642BC2-A867-498E-95DA-2B31AFB04EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5642BC2-A867-498E-95DA-2B31AFB04EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5642BC2-A867-498E-95DA-2B31AFB04EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
